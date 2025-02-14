@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 4</title>
+</head>
+<body>
+  <style>
+      .pagination a {
+        margin: 0px 5px;
+      }
+      .pagination button {
+      background-color: lightgray;
+      border: 1px solid black;
+      padding: 5px 10px;
+      }
+      #Stretch {
+        background-color: rgb(3, 120, 20);
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        transition: 1s;
+      }
+      #Stretch:hover {
+        padding: 10px 30px;
+        transition: 1s;
+      }
+      .button-3d {
+        background-color: rgb(3, 120, 20);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+      }
+      .button-3d:active {
+        transform: translateX(4px) translateY(4px);
+        box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
+      }
+      button#margin {
+        background-color: rgb(3, 120, 20);
+        color: white;
+        border: none;
+        margin: 20px;
+        padding: 10px 20px;
+        transition: 1s;
+      }
+      button#margin:hover {
+        margin: 10px;
+        padding: 10px 30px;
+        transition: 1s;
+      }
+  </style>
+</head>
+<h3>4h.</h3>
+<p class="pagination">
+    <button>Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <button>Next</button>
+</p>
+<h3>4i.</h3>
+<button type="button" id="Stretch">Stretch</button>
+<h3>4j.</h3>
+<button class="button-3d">Shadow</button>
+<h3>4k.</h3>
+<button id="margin">One</button>
+<button id="margin">Two</button>
+<button id="margin">Three</button>
+</body>
+</html>

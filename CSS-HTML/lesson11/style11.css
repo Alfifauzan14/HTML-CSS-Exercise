@@ -1,101 +1,54 @@
-.grid {
+.container3 {
   display: grid;
-  grid-template-columns: 200px 75px;
-}
-
-.lightblue {
-  background-color: lightblue;
-}
-
-.lightpink {
-  background-color: lightpink;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 50px 1fr 75px;
-}
-
-.lightblue {
-  background-color: lightblue;
-}
-
-.lightpink {
-  background-color: lightpink;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 10px;
-}
-
-.lightpink {
-  background-color: lightpink;
-}
-p {
-  font-family: Arial;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  column-gap: 20px;
-}
-
-.profile {
-  width: 200px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  vertical-align: top;
-  margin-right: 15px;
-}
-
-.profile-picture {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 12px;
-}
-
-.name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 8px;
-  margin-bottom: 5px;
-}
-
-.mutual-friends-row {
-  display: grid;
-  grid-template-columns: 35px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  gap: 5px;
+  justify-content: center;
   align-items: center;
-  margin-left: 8px;
-  margin-bottom: 10px;
 }
 
-.mutual-friend-picture {
-  height: 28px;
-  width: 28px;
+.card2 {
+  display: inline-block;
+  width: 200px;
+  background-color: white;
+  border: 1px solid rgb(196, 193, 193);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.card2 img {
+  width: 100%;
+  height: 150px;
   object-fit: cover;
-  border-radius: 14px;
-  vertical-align: middle;
-  margin-right: 4px;
+  border-radius: 5px 5px 0 0;
 }
 
-.mutual-friends {
-  color: rgb(100, 100, 100);
+.card2 h3 {
+  margin: 10px 0 5px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
 }
 
-.add-friend-button {
-  background-color: rgb(24, 119, 242);
+.card2 p {
+  margin: 5px 0;
+  color: gray;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.card2 button {
+  background-color: rgba(10, 102, 194);
   color: white;
   border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-left: 8px;
-  margin-bottom: 10px;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card2 button:hover {
+  background-color: rgba(10, 102, 246);
 }

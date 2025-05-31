@@ -3,81 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>lesson 11</title>
+  <link rel="stylesheet" href="style11.css">
 </head>
-<link rel="stylesheet" href="style11.css">
 <body>
-  <h3>11a.</h3>
-    <div class="grid">
-      <div class="lightblue">200px</div>
-      <div class="lightpink">75px</div>
-    </div>
-  <h3>11b.</h3>
-    <div class="grid">
-      <div class="lightblue">col1</div>
-      <div class="lightpink">col2</div>
-      <div class="lightblue">col3</div>
-    </div>
-  <h3>11c.</h3>
-      <div class="grid">
-      <div class="lightpink">col1</div>
-      <div class="lightpink">col2</div>
-      <div class="lightpink">col3</div>
-      <div class="lightpink">col4</div>
-      <div class="lightpink">col1</div>
-      <div class="lightpink">col2</div>
-      <div class="lightpink">col3</div>
-      <div class="lightpink">col4</div>
-    </div>
-  <h3>11d.</h3>
-      <div class="grid">
-      <div class="profile">
-        <img class="profile-picture" src="cat.jpg">
-        <p class="name">
-          Oliver
-        </p>
-        <div class="mutual-friends-row">
-          <img class="mutual-friend-picture" src="dog2.jpg">
-          <p class="mutual-friends">
-            2 mutual friends
-          </p>
-        </div>
-        <button class="add-friend-button">
-          Add Friend
-        </button>
-      </div>
+  <h2>11a.</h2>
+  <div style="display: grid; grid-template-columns: 200px 72px;">
+    <div style="background-color: lightblue;">200px</div>
+    <div style="background-color: lightpink;">72px</div>
+  </div>
 
-      <div class="profile">
-        <img class="profile-picture" src="cat2.jpg">
-        <p class="name">
-          Mimi
-        </p>
-        <div class="mutual-friends-row">
-          <img class="mutual-friend-picture" src="dog2.jpg">
-          <p class="mutual-friends">
-            3 mutual friends
-          </p>
-        </div>
-        <button class="add-friend-button">
-          Add Friend
-        </button>
-      </div>
+  <h2>11b.</h2>
+  <div style="display: grid; grid-template-columns: 50px 1fr 75px;">
+    <div style="background-color: lightblue;">col1</div>
+    <div style="background-color: lightpink">col2</div>
+    <div style="background-color: lightblue;">col3</div>
+  </div>
 
-      <div class="profile">
-        <img class="profile-picture" src="dog.jpg">
-        <p class="name">
-          Rex
-        </p>
-        <div class="mutual-friends-row">
-          <img class="mutual-friend-picture" src="dog2.jpg">
-          <p class="mutual-friends">
-            4 mutual friends
-          </p>
-        </div>
-        <button class="add-friend-button">
-          Add Friend
-        </button>
-      </div>
+  <h2>11c.</h2>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 20px;">
+    <div style="background-color: lightpink; ;">col1</div>
+    <div style="background-color: lightpink; ;">col2</div>
+    <div style="background-color: lightpink; ;">col3</div>
+    <div style="background-color: lightpink; ;">col4</div>
+    <div style="background-color: lightpink; ;">col5</div>
+    <div style="background-color: lightpink; ;">col6</div>
+    <div style="background-color: lightpink; ;">col7</div>
+    <div style="background-color: lightpink; ;">col8</div>
+  </div>
+
+  <h2>11d.</h2>
+  <div class="container3">
+    <div class="card2">
+      <img src="kucing1.png" alt="">
+      <h3>Oliver</h3>
+      <p>2 mutual friends</p>
+      <button>Add Friend</button>
     </div>
+    <div class="card2">
+      <img src="mobil1.jpg" alt="">
+      <h3>Mimi</h3>
+      <p>3 mutual friends</p>
+      <button>Add Friend</button>
+    </div>
+    <div class="card2">
+      <img src="mobil2.jpg" alt="">
+      <h3>Rex</h3>
+      <p>4 mutual friends</p>
+      <button>Add Friend</button>
+    </div>
+  </div>
 </body>
 </html>
